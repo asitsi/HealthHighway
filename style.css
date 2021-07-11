@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue: #4ca9ee;
+  --lblue: #29e7cd;
+}
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.8rem 3rem 0.8rem 3rem;
+}
+.navbar img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.3rem;
+}
+.navbar span {
+  color: var(--blue);
+  font-size: 20px;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+.navbar span span {
+  color: var(--lblue);
+}
+.navbar button {
+  background-color: var(--blue);
+  padding: 0.3rem 1.5rem;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+}
+
+/* header */
+
+.header {
+  background-image: url("./images/adLanding.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.header div {
+  color: #fff;
+}
+.header div h1 {
+  font-weight: 700 !important;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+}
+.header div p {
+  font-weight: 700 !important;
+  font-size: 18px;
+}
+/* section1 */
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 7rem 0.8rem 7rem;
+  position: relative;
+}
+.section1 .MainContent {
+  padding: 3rem 4rem;
+}
+.section1 .MainContent .content {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+.section1 .MainContent .content .bg_img {
+  background-image: url("./images/ad-usp-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-top: 4px solid var(--lblue);
+}
+.section1 .MainContent .content .bg_img2 {
+  background-image: url("./images/ad-usp-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-top: 4px solid var(--lblue);
+}
+.section1 .MainContent .content .bg_img3 {
+  background-image: url("./images/ad-usp-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-top: 4px solid var(--lblue);
+}
+.section1 .MainContent .content img {
+  border-top: 4px solid var(--lblue);
+  height: 100px;
+}
+.section1 .MainContent .content h6 {
+  align-items: right;
+  font-size: 1.3rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #111;
+}
+.section1 .appointment {
+  background-color: #111;
+  color: #fff;
+  width: 25%;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  top: -100px;
+  right: 150px;
+}
+
+.section1 .appointment form button {
+  width: 100%;
+  background-color: var(--blue);
+  color: #fff;
+  padding: 0.4rem 0;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+}
+/* section2 */
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem 0.8rem 5rem;
+}
+.section2 .content {
+  padding: 4rem 2rem;
+}
+.section2 .content h1 {
+  font-weight: 700 !important;
+}
+.section2 .content p {
+  color: #999;
+  font-size: 16px;
+  padding: 1rem 0;
+  line-height: 18px;
+}
+.section2 video {
+  height: 400px;
+  width: 55vw;
+  border-radius: 20px;
+}
+
+/* section3 */
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem 3rem 5rem;
+  background-color: #111;
+  color: #fff;
+}
+.section3 p {
+  font-size: 14px;
+}
+.section3 .margin_button {
+  margin-top: 1.5rem;
+}
+.section3 button:nth-child(1) {
+  padding: 0.4rem 2rem;
+  color: #fff;
+  background-color: #27e7cd;
+  border: none;
+  border-radius: 20px;
+}
+.section3 button:nth-child(2) {
+  padding: 0.4rem 2rem;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+}
+
+/* Footer */
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+}
+.Footer a {
+  margin: 0 1rem;
+  color: #111;
+  text-decoration: none;
+}
+.Footer p {
+  color: #999;
+  font-size: 14px;
+}
+.Footer .bottom {
+  color: #999;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 2rem 0.8rem 2rem;
+  }
+  .navbar button {
+    background-color: #000;
+  }
+  .header {
+    background-size: 100% 100%;
+  }
+  .section1 {
+    display: block;
+    padding: 0.8rem 0rem 0.8rem 0rem;
+  }
+  .section1 .MainContent .content .bg_img {
+    background-image: url("./images/ad-new-usp-1.png");
+  }
+  .section1 .MainContent .content .bg_img2 {
+    background-image: url("./images/ad-new-usp-2.png");
+  }
+  .section1 .MainContent .content .bg_img3 {
+    background-image: url("./images/ad-new-usp-3.png");
+  }
+  .section1 .appointment {
+    top: 100%;
+    right: 0;
+    width: 100%;
+  }
+  .section1 .appointment form button {
+    background-color: #fff;
+    color: #000;
+  }
+  .section2 {
+    display: block;
+    padding: 1rem 1rem 0.8rem 1rem;
+    margin-top: 33rem;
+  }
+  .section2 .content {
+    padding: 0;
+  }
+  .section2 .content h1 {
+    font-size: 2rem;
+  }
+  .section2 video {
+    width: 100%;
+  }
+  .section3 {
+    display: block;
+    padding: 1rem;
+  }
+  .section3 button:nth-child(1) {
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 20px;
+  }
+  .Footer {
+    height: 150px;
+  }
+  .Footer a {
+    margin: 0 0.4rem;
+  }
+}
